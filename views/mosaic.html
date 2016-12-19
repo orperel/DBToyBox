@@ -1,0 +1,107 @@
+
+    <div class="grid">
+        <div class="grid-item grid-item-width-1 grid-item-height-1">
+            <a href="/event/id={{mosaic[0].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[0].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[0].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[0].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item grid-item-width-1 grid-item-height-1">
+            <a href="/event/id={{mosaic[1].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[1].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[1].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[1].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item grid-item-width-2 grid-item-height-2">
+            <a href="/event/id={{mosaic[2].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[2].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[2].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[2].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item grid-item-width-1 grid-item-height-2">
+            <a href="/event/id={{mosaic[3].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[3].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[3].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[3].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item grid-item-width-1 grid-item-height-1">
+            <a href="/event/id={{mosaic[4].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[4].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[4].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[4].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item grid-item-width-1 grid-item-height-1">
+            <a href="/event/id={{mosaic[5].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[5].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[5].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[5].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item grid-item-width-1 grid-item-height-1">
+            <a href="/event/id={{mosaic[6].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[6].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[6].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[6].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="grid-item grid-item-width-1 grid-item-height-1">
+            <a href="/event/id={{mosaic[7].event_id}}">
+                <div class="cm_container">
+                    <img src="img/{{mosaic[7].event_category}}.jpg">
+                    <div class="cm_caption">
+                        <h3>{{mosaic[7].event_name}}</h3>
+                        <p class="cm_category">{{mosaic[7].event_description}}</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+
+
+<script>
+    $('.grid').masonry({
+        itemSelector: '.grid-item',
+        columnWidth: 250
+    });
+</script>

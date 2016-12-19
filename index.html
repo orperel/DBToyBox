@@ -5,9 +5,12 @@
 <head>
     <title>עכבר הכפר</title>
 
+    <base href="/" />
+
     <!-- AngularJS and JQuery -->
     <script src="lib/jquery.min.js"></script>
     <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-route.js"></script>
     <script src="lib/masonry.pkgd.min.js"></script>
 
     <!-- Bootstrap -->
@@ -21,13 +24,15 @@
     <link rel="stylesheet" href="css/mouse.css">
 </head>
 
-<body ng-app="mouse" ng-controller="events">
+<body ng-app="mouse">
     <div class="logoHeader">
         <div class="container">
             <div class="row">
-                <div class="col-md-1">
-                    <img src="/img/logo.gif" class="logo">
-                </div>
+                <a href="/">
+                    <div class="col-md-1">
+                        <img src="/img/logo.gif" class="logo">
+                    </div>
+                </a>
 
                 <div class="col-md-7">
                     <h1>  עכבר הכפר</h1>
@@ -62,112 +67,8 @@
     </header>
 
     <div class="container">
-        <div class="grid">
-            <div class="grid-item grid-item-width-1 grid-item-height-1">
-                <a href="/event/id={{mosaic[0].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[0].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[0].name}}</h3>
-                            <p class="cm_category">{{mosaic[0].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-item grid-item-width-1 grid-item-height-1">
-                <a href="/event/id={{mosaic[1].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[1].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[1].name}}</h3>
-                            <p class="cm_category">{{mosaic[1].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-item grid-item-width-2 grid-item-height-2">
-                <a href="/event/id={{mosaic[2].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[2].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[2].name}}</h3>
-                            <p class="cm_category">{{mosaic[2].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-item grid-item-width-1 grid-item-height-2">
-                <a href="/event/id={{mosaic[3].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[3].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[3].name}}</h3>
-                            <p class="cm_category">{{mosaic[3].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-item grid-item-width-1 grid-item-height-1">
-                <a href="/event/id={{mosaic[4].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[4].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[4].name}}</h3>
-                            <p class="cm_category">{{mosaic[4].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-item grid-item-width-1 grid-item-height-1">
-                <a href="/event/id={{mosaic[5].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[5].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[5].name}}</h3>
-                            <p class="cm_category">{{mosaic[5].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-item grid-item-width-1 grid-item-height-1">
-                <a href="/event/id={{mosaic[6].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[6].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[6].name}}</h3>
-                            <p class="cm_category">{{mosaic[6].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-
-            <div class="grid-item grid-item-width-1 grid-item-height-1">
-                <a href="/event/id={{mosaic[7].id}}">
-                    <div class="cm_container">
-                        <img src="img/{{mosaic[7].category}}.jpg">
-                        <div class="cm_caption">
-                            <h3>{{mosaic[7].name}}</h3>
-                            <p class="cm_category">{{mosaic[7].description}}</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        </div>
-
+        <div ng-view></div>
     </div>
 </body>
-
-<script>
-    $('.grid').masonry({
-        itemSelector: '.grid-item',
-        columnWidth: 250
-    });
-</script>
 
 </html>
